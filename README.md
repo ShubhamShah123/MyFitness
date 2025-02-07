@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# MyFitness
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
+**MyFitness** is a React Native application designed to help users efficiently manage their fitness journey. The app offers a structured approach to tracking workouts, nutrition, weight, and progress over time. Users can also start workout sessions and log their daily activities.
 
-## Get started
+## Features
+The application consists of five main pages:
 
-1. Install dependencies
+### 1. Workout Schedule
+- Displays the workout schedule on a day-wise basis.
+- Helps users stay consistent with their fitness plan.
 
+### 2. Nutrition
+- Provides meal plans for different times of the day:
+  - **Pre-workout**
+  - **Breakfast**
+  - **Lunch**
+  - **Snack**
+  - **Dinner**
+- Incorporates **high-carb** and **low-carb** days:
+  - **Low-carb days:** Monday, Tuesday, Wednesday.
+  - **High-carb days:** Thursday, Friday, Saturday.
+  - **Rest day:** Sunday (off day).
+
+### 3. WeightMeasure
+- Allows users to track their weight and measurements.
+- Keeps a record of meals consumed.
+
+### 4. StartSession
+- Starts a session timer for the day.
+- Users can tick checkboxes for completed workouts.
+- Provides an option to upload workout progress to a database.
+
+### 5. History
+- Displays all recorded details for each day.
+- Users can review their past workout and nutrition logs.
+
+## Technologies Used
+- **React Native** for cross-platform mobile development.
+- **Redux (Optional)** for state management.
+- **Firebase/MongoDB** for data storage and retrieval.
+- **Async Storage** for local data caching.
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/MyFitness.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd MyFitness
+   ```
+3. Install dependencies:
    ```bash
    npm install
+   # or
+   yarn install
    ```
-
-2. Start the app
-
+4. Run the application:
    ```bash
-    npx expo start
+   npx react-native run-android  # For Android
+   npx react-native run-ios      # For iOS (requires macOS)
    ```
 
-In the output, you'll find options to open the app in a
+## Future Enhancements
+- Integration with wearables (e.g., Apple Watch, Fitbit).
+- AI-based workout and meal recommendations.
+- Enhanced analytics for performance tracking.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## License
+This project is licensed under the MIT License.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
