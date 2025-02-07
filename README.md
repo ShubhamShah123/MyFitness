@@ -63,9 +63,8 @@ The application consists of five main pages:
    ```
 
 ## Future Enhancements
-- Integration with wearables (e.g., Apple Watch, Fitbit).
-- AI-based workout and meal recommendations.
-- Enhanced analytics for performance tracking.
+- Creating a user profile.
+- Making a more indepth dashboard for the user which can allow them to modify or create thier workout schedule and dietry preferences.
 
 ## License
 This project is licensed under the MIT License.
